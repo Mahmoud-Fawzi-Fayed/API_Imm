@@ -1,0 +1,53 @@
+body,
+ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+li button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+li button.edit {
+    background-color:  #3498db;
+    margin-right: 5px;
+}
+
+li button.delete {
+    background-color: #e74c3c;
+}
+
+#pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#pagination button {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 15px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+#pagination button[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
